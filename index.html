@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .ShowAll {
+      width: calc((100% / 3) - 7px);
+      height: 150px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 7px;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="ShowAll">
+      <h4>
+        Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp
+        thoại thông báo là đã hoàn thành.
+      </h4>
+      <button onclick="countTo99Alert()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập
+        bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng
+        giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.
+      </h4>
+      <button onclick="checkTemperature()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</h4>
+      <button onclick="first20Fibonacci()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5</h4>
+      <button onclick="firstFibDiv5()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci.</h4>
+      <button onclick="sumFirstFib20()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự
+        nhiên.
+      </h4>
+      <button onclick="sumFirst30Div7()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 7: Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số
+        chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó.
+        Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
+      </h4>
+      <button onclick="fizzBuzz()">Click to display</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
